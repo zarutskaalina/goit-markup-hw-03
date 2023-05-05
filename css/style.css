@@ -1,12 +1,12 @@
 :root {
   --main-font-family: Roboto, sans-serif;
   --secondary-font-family: Raleway, sans-serif;
-  --main-color: #2e2f42;
-}
-
-body {
-  font-family: var(--main-font-family);
-  color: var(--main-color);
+  --primary-text-color-theme-dark: #ffffff;
+  --primary-headline-color-theme-light: #2e2f42;
+  --primary-text-color-theme-light: #434455;
+  --secondary-color: #f4f4fd;
+  --accent-color: #4d5ae5;
+  --list-buttons-color: #404bbf;
 }
 
 .list {
@@ -22,24 +22,130 @@ button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: var(--main-font-family);
+  background-color: #ffffff;
+  color: #434455;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* ================= COMPONENTS ================= */
 .logo-type {
   font-family: var(--secondary-font-family);
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .second-part-logo {
-  color: var(--main-color);
+  color: var(--primary-headline-color-theme-light);
 }
 
 .second-part-logo-item {
-  color: #f4f4fd;
+  color: var(--secondary-color);
+}
+.modal-open-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  width: 169px;
+  height: 56px;
+  background-color: var(--buttons-background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--primary-text-color-theme-dark);
+}
+
+.modal-open-btn:hover,
+.modal-open-btn:focus {
+  background-color: var(--list-buttons-color);
+}
+
+.list-modal-open-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  width: 101px;
+  height: 48px;
+  background: var(--buttons-color);
+  color: var(--buttons-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.list-modal-open-btn:hover,
+.list-modal-open-btn:focus {
+  background: var(--list-buttons-color);
+  color: var(--primary-text-color-theme-dark);
+}
+/* ================= /COMPONENTS ================= */
+
+/* ================= HEADER ================= */
+
+.page-header {
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.page-nav {
+  margin-right: 332px;
+  display: flex;
+}
+
+.logo {
+  margin-right: 76px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
 }
 
 .menu-link {
@@ -47,81 +153,129 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--primary-headline-color-theme-light);
 }
 
 .menu-link:hover,
 .menu-link:focus {
   text-decoration: underline;
-  color: #404bbf;
+  color: var(--accent-color);
 }
 
 .contacts-data {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts-mail {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--primary-text-color-theme-light);
 }
 
-.contacts-data:hover,
-.contacts-data:focus {
+.contacts-tel {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+
+.contacts-mail:hover,
+.contacts-mail:focus {
   text-decoration: underline;
-  color: #404bbf;
+  color: var(--accent-color);
+}
+
+.contacts-tel:hover,
+.contacts-tel:focus {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+/* ================= /HEADER ================= */
+
+/* ================= MAIN CONTENT================= */
+.order-service {
+  background-color: var(--primary-headline-color-theme-light);
 }
 
 .main-title {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 48px;
+  width: 496px;
   font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--primary-text-color-theme-dark);
 }
 
-.modal-open-btn {
-  width: 169px;
-  height: 56px;
-  background-color: #4d5ae5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: #ffffff;
+.hero-img {
+  width: 1440px;
+  height: 600px;
+  background-color: var(--primary-headline-color-theme-light);
 }
 
-.modal-open-btn:hover,
-.modal-open-btn:focus {
-  background-color: #404bbf;
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.page-label {
+.principles-list {
+  display: flex;
+  align-items: center;
+}
+
+.principle-name {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--primary-headline-color-theme-light);
 }
 
-.description-label {
+.description-principle-name {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--primary-text-color-theme-light);
 }
 
-.footer-text {
-  color: #f4f4fd;
+.gallery-our-team {
+  background-color: var(--secondary-color);
 }
 
 .headline-our-work {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--primary-headline-color-theme-light);
 }
 
 .card-contant {
   text-align: center;
+  background-color: var(--primary-text-color-theme-dark);
+}
+/* ================= /MAIN CONTENT================= */
+
+/* ================= FOOTER ================= */
+.footer-bg {
+  background-color: var(--primary-headline-color-theme-light);
 }
 
-.dark-bg {
-  background-color: var(--main-color);
+.footer-text {
+  color: var(--secondary-color);
 }
+
+/* ================= /FOOTER ================= */
