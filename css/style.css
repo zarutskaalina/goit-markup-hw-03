@@ -36,6 +36,8 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  display: flex;
+  align-items: center;
 }
 
 img {
@@ -54,32 +56,13 @@ body {
 }
 
 .section {
-  padding-top: 120px;
+  box-sizing: border-box;
   padding-bottom: 120px;
 }
 
 /* ================= COMPONENTS ================= */
-.logo-type {
-  font-family: var(--secondary-font-family);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--accent-color);
-}
 
-.second-part-logo {
-  color: var(--primary-headline-color-theme-light);
-}
-
-.second-part-logo-item {
-  color: var(--secondary-color);
-}
 .modal-open-btn {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -142,6 +125,22 @@ body {
 
 .logo {
   margin-right: 76px;
+}
+
+.logo-type {
+  font-family: var(--secondary-font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.second-part-logo {
+  color: var(--primary-headline-color-theme-light);
 }
 
 .menu {
@@ -214,7 +213,9 @@ body {
   color: var(--primary-text-color-theme-dark);
 }
 
+/* ================= HERO ================= */
 .hero-img {
+  margin-bottom: 120px;
   width: 1440px;
   height: 600px;
   background-color: var(--primary-headline-color-theme-light);
@@ -228,13 +229,15 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+/* ================= /HERO ================= */
 
+/* ================= OUR PRINCIPLES ================= */
 .principles-list {
-  display: flex;
-  align-items: center;
+  gap: 24px;
 }
 
-.principle-name {
+.principle-list-name {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -242,19 +245,17 @@ body {
   color: var(--primary-headline-color-theme-light);
 }
 
-.description-principle-name {
+.description-principle-list-name {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-light);
 }
-
-.gallery-our-team {
-  background-color: var(--secondary-color);
-}
+/* ================= /OUR PRINCIPLES ================= */
 
 .headline-our-work {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -264,19 +265,100 @@ body {
   color: var(--primary-headline-color-theme-light);
 }
 
-.card-contant {
+.gallery-img {
+  justify-content: center;
+  gap: 24px;
+}
+
+.photo-our-work {
+  border: 1px solid #e7e9fc;
+}
+
+/* ================= EMPLOYEES ================= */
+
+.gallery-employees {
+  width: 1440px;
+  height: 732px;
+  background: var(--secondary-color);
+}
+
+.employees-title {
+  margin-bottom: 72px;
+  padding-top: 120px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-headline-color-theme-light);
+}
+
+.employees-list {
+  padding-left: 156px;
+  padding-right: 156px;
+  justify-content: space-between;
+  gap: 24px;
+  text-align: center;
+}
+
+.employees-list-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-text-color-theme-dark);
 }
+
+.employees-list-name {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-headline-color-theme-light);
+}
+
+.employees-list-position {
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+
+/* ================= /EMPLOYEES ================= */
+
 /* ================= /MAIN CONTENT================= */
 
 /* ================= FOOTER ================= */
-.footer-bg {
+.footer-block {
+  width: 1440px;
+  height: 312px;
   background-color: var(--primary-headline-color-theme-light);
 }
 
-.footer-text {
+.page-footer {
+  margin-left: 156px;
+  padding-top: 100px;
+}
+
+.footer-logo {
+  margin-bottom: 17.5px;
+}
+.second-part-logo-item {
   color: var(--secondary-color);
 }
 
+.motivational-text {
+  width: 264px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
 /* ================= /FOOTER ================= */
