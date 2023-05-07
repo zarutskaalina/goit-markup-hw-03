@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio</title>
   </head>
@@ -22,15 +26,15 @@
             >Web <span class="second-part-logo">Studio</span></a
           >
           <ul class="menu list">
-            <li class="menu-item">
+            <li class="menu-items">
               <a class="menu-link link" href="./index.html">Studio</a>
             </li>
 
-            <li class="menu-item">
+            <li class="menu-items">
               <a class="menu-link link" href="./portfolio.html">Portfolio</a>
             </li>
 
-            <li class="menu-item">
+            <li class="menu-items">
               <a class="menu-link link" href="">Contacts</a>
             </li>
           </ul>
@@ -55,24 +59,30 @@
 
     <main>
       <section class="filters-list container">
-        <h1 hidden>Content-nav</h1>
-        <ul class="buttons-filters-list list">
-          <li>
-            <button class="list-modal-open-btn" type="button">All</button>
-          </li>
-          <li>
-            <button class="list-modal-open-btn" type="button">Web Site</button>
-          </li>
-          <li>
-            <button class="list-modal-open-btn" type="button">App</button>
-          </li>
-          <li>
-            <button class="list-modal-open-btn" type="button">Design</button>
-          </li>
-          <li>
-            <button class="list-modal-open-btn" type="button">Marketing</button>
-          </li>
-        </ul>
+        <div class="container">
+          <h1 hidden>Content-nav</h1>
+          <ul class="buttons-filters-list list">
+            <li>
+              <button class="list-modal-open-btn" type="button">All</button>
+            </li>
+            <li>
+              <button class="list-modal-open-btn" type="button">
+                Web Site
+              </button>
+            </li>
+            <li>
+              <button class="list-modal-open-btn" type="button">App</button>
+            </li>
+            <li>
+              <button class="list-modal-open-btn" type="button">Design</button>
+            </li>
+            <li>
+              <button class="list-modal-open-btn" type="button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+        </div>
 
         <ul class="gallery-filters container list">
           <li class="gallery-card-content">
@@ -237,7 +247,7 @@
     </main>
 
     <footer class="footer-block container">
-      <div class="page-footer">
+      <div class="page-footer container">
         <a class="footer-logo logo-type link" href="./index.html"
           >Web <span class="second-part-logo-item">Studio</span></a
         >
