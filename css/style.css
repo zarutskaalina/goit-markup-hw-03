@@ -58,7 +58,6 @@ body {
 
 .section {
   box-sizing: border-box;
-  padding-bottom: 120px;
 }
 
 /* ================= COMPONENTS ================= */
@@ -110,8 +109,6 @@ body {
 
 .page-header {
   box-sizing: border-box;
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -150,6 +147,9 @@ body {
 .menu {
   display: flex;
   gap: 40px;
+}
+
+.menu-item {
   padding: 24px 0;
 }
 
@@ -251,6 +251,22 @@ body {
 /* ================= /FILTERS ================= */
 
 /* ================= HERO ================= */
+
+.hero-img {
+  margin-bottom: 120px;
+  padding: 188px 0;
+  width: 1440px;
+  height: 600px;
+  background-color: var(--primary-headline-color-theme-light);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .order-service {
   background-color: var(--primary-headline-color-theme-light);
 }
@@ -268,24 +284,14 @@ body {
   color: var(--primary-text-color-theme-dark);
 }
 
-.hero-img {
-  margin-bottom: 120px;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  width: 1440px;
-  height: 600px;
-  background-color: var(--primary-headline-color-theme-light);
-}
-
-.hero {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
 /* ================= /HERO ================= */
 
 /* ================= OUR PRINCIPLES ================= */
+.our-principles {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .principles-list {
   gap: 24px;
 }
