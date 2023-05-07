@@ -53,6 +53,7 @@ body {
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
@@ -63,11 +64,13 @@ body {
 /* ================= COMPONENTS ================= */
 
 .modal-open-btn {
+  display: block;
+  border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   background-color: var(--buttons-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -121,6 +124,7 @@ body {
 .page-nav {
   margin-right: 332px;
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -146,6 +150,7 @@ body {
 .menu {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .menu-link {
@@ -254,7 +259,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -265,14 +270,14 @@ body {
 
 .hero-img {
   margin-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
   width: 1440px;
   height: 600px;
   background-color: var(--primary-headline-color-theme-light);
 }
 
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
   display: flex;
   align-items: center;
   flex-direction: column;
