@@ -227,7 +227,7 @@ body {
 }
 
 .gallery-card-content {
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .description-gallery-filters {
