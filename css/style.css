@@ -226,7 +226,7 @@ body {
   row-gap: 48px;
 }
 
-.gallery-filter li:first-child {
+.gallery-card-content a {
   width: calc((100% - 48px) / 3);
 }
 
