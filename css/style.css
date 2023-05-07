@@ -297,8 +297,8 @@ body {
 }
 
 .principles-list-items {
-  flex-basis: calc((100% - 72px) / 4))
-} 
+  flex-basis: calc((100% - 72px) / 4);
+}
 
 .principle-list-name {
   margin-bottom: 8px;
@@ -318,7 +318,7 @@ body {
 }
 /* ================= /OUR PRINCIPLES ================= */
 .gallery-our-work {
-  padding-bottom: 120px; 
+  padding-bottom: 120px;
 }
 
 .headline-our-work {
@@ -338,13 +338,17 @@ body {
 }
 
 .photo-our-work {
-  flex-basis: calc((100% - 48px) / 3);
   border: 1px solid #e7e9fc;
 }
 
+.gallery-photo {
+  flex-basis: calc((100% - 48px) / 3);
+}
 /* ================= EMPLOYEES ================= */
 
 .gallery-employees {
+  padding-top: 120px;
+  padding-bottom: 120px;
   width: 1440px;
   height: 732px;
   background: var(--secondary-color);
