@@ -345,7 +345,7 @@ body {
   gap: 24px;
 }
 
-.photo-our-work {
+.photo {
   flex-basis: calc((100% - 48px) / 3);
 }
 
