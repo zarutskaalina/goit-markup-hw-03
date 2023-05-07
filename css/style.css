@@ -84,6 +84,7 @@ body {
 }
 
 .list-modal-open-btn {
+  border: 1px solid #e7e9fc;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -100,6 +101,7 @@ body {
 
 .list-modal-open-btn:hover,
 .list-modal-open-btn:focus {
+  border: 1px solid transparent;
   background: var(--list-buttons-color);
   color: var(--primary-text-color-theme-dark);
 }
@@ -150,7 +152,8 @@ body {
 }
 
 .menu-items {
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-link {
@@ -207,8 +210,10 @@ body {
   padding-top: 96px;
   padding-bottom: 120px;
 }
+
 .buttons-filters-list {
   margin-bottom: 72px;
+  padding: 12px 24px;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -223,6 +228,7 @@ body {
 }
 
 .gallery-card-content {
+  width: calc((100% - 48px) / 3);
   border: 1px solid #e7e9fc;
 }
 
