@@ -74,7 +74,6 @@ body {
   min-width: 169px;
   height: 56px;
   background-color: var(--buttons-background-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--primary-text-color-theme-dark);
@@ -82,6 +81,7 @@ body {
 
 .modal-open-btn:hover,
 .modal-open-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--list-buttons-color);
 }
 
@@ -96,13 +96,13 @@ body {
   height: 48px;
   background: var(--secondary-color);
   color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
 .list-modal-open-btn:hover,
 .list-modal-open-btn:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border: 1px solid transparent;
   background: var(--list-buttons-color);
   color: var(--primary-text-color-theme-dark);
@@ -166,7 +166,7 @@ body {
 
 .menu-link:hover,
 .menu-link:focus {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--accent-color);
 }
 
@@ -213,7 +213,6 @@ body {
 
 .buttons-filters-list {
   margin-bottom: 72px;
-  padding: 12px 24px;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -258,7 +257,6 @@ body {
 
 .hero-img {
   padding: 188px 0;
-  width: 1440px;
   height: 600px;
   background-color: var(--primary-headline-color-theme-light);
 }
@@ -350,8 +348,6 @@ body {
 .gallery-employees {
   padding-top: 120px;
   padding-bottom: 120px;
-  width: 1440px;
-  height: 732px;
   background: var(--secondary-color);
 }
 
@@ -412,13 +408,7 @@ body {
 .footer-block {
   padding-top: 100px;
   padding-bottom: 100px;
-  width: 1440px;
-  height: 312px;
   background-color: var(--primary-headline-color-theme-light);
-}
-
-.page-footer {
-  margin-left: 156px;
 }
 
 .footer-logo {
